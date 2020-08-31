@@ -5,10 +5,7 @@ import com.dlog.service.BoardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.List;
@@ -20,10 +17,11 @@ public class boardController {
     @Autowired
     private BoardService service;
 
-    @RequestMapping(value = "/create", method = RequestMethod.POST, headers = {"Content-type=application/json"})
+    @RequestMapping(value = "/create", method = RequestMethod.POST, headers = { "Content-type=application/json" })
     @ResponseBody
-    public Map create(@PathVariable BoardVO boardVO) {
-        service.create(boardVO);
+    public Map create(@RequestBody BoardVO boardVO) {
+        if (boardVO != null)
+            service.create(boardVO);
         Map result = new HashMap();
         result.put("result", Boolean.TRUE);
         return result;
@@ -41,7 +39,7 @@ public class boardController {
 
     @RequestMapping(value = "/update", method = RequestMethod.POST, headers = {"Content-type=application/json"})
     @ResponseBody
-    public Map update(@PathVariable BoardVO boardVO) {
+    public Map update(@RequestBody BoardVO boardVO) {
         service.update(boardVO);
         Map result = new HashMap();
         result.put("result", Boolean.TRUE);
@@ -61,6 +59,7 @@ public class boardController {
     @RequestMapping(value = "/getlist", method = RequestMethod.GET)
     @ResponseBody
     public Map getList() {
+        System.out.println("getlist");
         List<BoardVO> boardVO = service.getList();
         Map result = new HashMap();
         result.put("result", Boolean.TRUE);
