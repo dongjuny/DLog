@@ -37,7 +37,7 @@ public class boardController {
         return result;
     }
 
-    @RequestMapping(value = "/update", method = RequestMethod.POST, headers = {"Content-type=application/json"})
+    @RequestMapping(value = "/update", method = RequestMethod.PUT, headers = {"Content-type=application/json"})
     @ResponseBody
     public Map update(@RequestBody BoardVO boardVO) {
         service.update(boardVO);
@@ -59,7 +59,6 @@ public class boardController {
     @RequestMapping(value = "/getlist", method = RequestMethod.GET)
     @ResponseBody
     public Map getList() {
-        System.out.println("getlist");
         List<BoardVO> boardVO = service.getList();
         Map result = new HashMap();
         result.put("result", Boolean.TRUE);
