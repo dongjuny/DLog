@@ -14,9 +14,9 @@
     <mvc:default-servlet-handler/>
 
     <context:component-scan base-package="com.dlog"/>
-    <!--컨트롤러 실행결과를 어떤 view에서 보여줄지 결정하는 기능 설정-->
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/view/"/>
-        <property name="suffix" value=".jsp"/>
-    </bean>
+<!--    &lt;!&ndash;컨트롤러 실행결과를 어떤 view에서 보여줄지 결정하는 기능 설정&ndash;&gt;-->
+<!--    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+<!--        <property name="prefix" value="/WEB-INF/view/"/>-->
+<!--        <property name="suffix" value=".jsp"/>-->
+<!--    </bean>-->
 </beans>
