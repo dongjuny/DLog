@@ -30,16 +30,16 @@
 
 ### <Use Case Diagram>
 
-<img width="553" alt="스크린샷 2020-08-30 오후 2 51 27" src="[https://user-images.githubusercontent.com/33618171/91652273-79748d00-ead0-11ea-8c36-b22bbb3e7fbb.png](https://user-images.githubusercontent.com/33618171/91652273-79748d00-ead0-11ea-8c36-b22bbb3e7fbb.png)">
+<img width="697" alt="스크린샷 2020-09-13 오후 7 55 24" src="https://user-images.githubusercontent.com/33618171/93016305-36033e00-f5fb-11ea-988c-0c016abde16a.png">
 
 ---
 
 ### <Class Diagram>
 
-<img width="608" alt="스크린샷 2020-08-30 오후 2 51 40" src="[https://user-images.githubusercontent.com/33618171/91652279-8e512080-ead0-11ea-96cf-ae62d5f3663e.png](https://user-images.githubusercontent.com/33618171/91652279-8e512080-ead0-11ea-96cf-ae62d5f3663e.png)">
+<img width="690" alt="스크린샷 2020-09-13 오후 7 56 01" src="https://user-images.githubusercontent.com/33618171/93016317-49aea480-f5fb-11ea-8074-84eda0a12a89.png">
 
 ---
 
 ### <ERD>
 
-<img width="459" alt="스크린샷 2020-09-13 오후 7 14 32" src="[https://user-images.githubusercontent.com/33618171/93015845-b4f67780-f5f7-11ea-91b7-f851403c1778.png](https://user-images.githubusercontent.com/33618171/93015845-b4f67780-f5f7-11ea-91b7-f851403c1778.png)">
+<img width="459" alt="스크린샷 2020-09-13 오후 7 14 32" src="https://user-images.githubusercontent.com/33618171/93016321-53d0a300-f5fb-11ea-8e84-2788fee3687e.png">
